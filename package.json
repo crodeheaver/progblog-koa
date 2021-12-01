@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "bookshelf": "^1.2.0",
+    "knex": "^0.95.14",
+    "koa": "^2.13.4",
+    "koa-handlebars": "^2.0.0",
+    "mysql": "^2.18.1",
+    "uuid": "^8.3.2"
+  },
+  "name": "progblog",
+  "version": "0.0.1",
+  "description": "Just another homebrew blog",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon main.js -e hbs,js,css,html,jpg,png,scss",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "koa",
+    "knex"
+  ],
+  "author": "Colby Rodeheaver",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.2.0"
+  }
+}
