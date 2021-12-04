@@ -1,8 +1,11 @@
-const koa = require('koa');
-const router = require('./routes/index')
-const handlebars = require("koa-handlebars");
-const db = require('./middleware/knex-middleware')
+import koa from 'koa'
+import handlebars from 'koa-handlebars'
+import helmet from 'koa-helmet';
+import router from './routes/index.js'
+import db from './middleware/knex-middleware.js'
 const app = new koa();
+
+app.use(helmet());
 
 app.use(handlebars({
   defaultLayout: "main"

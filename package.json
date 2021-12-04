@@ -5,6 +5,7 @@
     "knex": "^0.95.14",
     "koa": "^2.13.4",
     "koa-handlebars": "^2.0.0",
+    "koa-helmet": "^6.1.0",
     "mysql": "^2.18.1",
     "uuid": "^8.3.2"
   },
@@ -12,6 +13,7 @@
   "version": "0.0.1",
   "description": "Just another homebrew blog",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "start": "nodemon main.js -e hbs,js,css,html,jpg,png,scss",
     "test": "echo \"Error: no test specified\" && exit 1"
